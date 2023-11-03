@@ -1,6 +1,6 @@
 $(function () {
 	const am = {};
-	$("#input#check_amen").change(function (){
+	$("*[name='amenity']").change(function (){
 		if ($(this).is(":checked"))
 			am[$(this).attr("data-name")] = $(this).attr("data-id");
 		else delete am[$(this).attr("data-name")];
